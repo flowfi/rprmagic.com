@@ -1,6 +1,11 @@
 <!doctype html><html data-wf-page="5e6c306339a73b6573b5c535" data-wf-site="5e6c3062a2ae9741bf21a2a4"><head><style>html{visibility: hidden;opacity:0;}</style>{%- seo seo -%}
   <meta charset="utf-8">
   
+  
+  
+  
+  
+  
   <meta content="width=device-width, initial-scale=1" name="viewport">
   
   <link href="/static/css/normalize.css" rel="preload" type="text/css" as="style" onload="this.rel='stylesheet'">
@@ -32,50 +37,57 @@
   <!--  End Facebook Pixel Code  -->
 
 
-  <div class="section cc-product-detail">
-    <div class="product-image"></div>
-    <div class="product-details-wrap">
-      <div class="product-detail-main-details">
-        <h1 class="product-detail-name"></h1>
-        <div class="product-detail-price"></div>
-        <div class="paragraph-light"></div>
-      </div>
-      <div class="divider cc-dark-divider"></div>
-      <div class="product-informations">
-        <ul class="w-list-unstyled">
-          <li class="list-item">
-            <div class="paragraph-light">Dimensions</div>
-            <div class="product-detail-measurement">
-              <div></div>
-              <div class="product-detail-unit-text cc-middle-text">in x</div>
-              <div></div>
-              <div class="product-detail-unit-text cc-middle-text">in x</div>
-              <div></div>
-              <div class="product-detail-unit-text">in</div>
+  <div class="w-dyn-list">
+    <div class="w-dyn-items">
+      {%- assign collection = collections.filtered['products**product']['current-product'] -%}{%- for item in collection -%}<div class="w-dyn-item">
+        <div class="section cc-product-detail">
+          <div class="product-image" style="background-image: url({{ item.data.main-image }})"></div>
+          <div class="product-details-wrap">
+            <div class="product-detail-main-details">
+              <h1 class="product-detail-name">{{ item.data.title }}</h1>
+              <div class="product-detail-price">{{ item.data.price }}</div>
+              <div class="paragraph-light">{{ item.data.description }}</div>
             </div>
-          </li>
-          <li class="list-item">
-            <div class="paragraph-light">Weight</div>
-            <div class="product-detail-measurement">
-              <div></div>
-              <div class="product-detail-unit-text">oz</div>
+            <div class="divider cc-dark-divider"></div>
+            <div class="product-informations hidden">
+              <ul class="w-list-unstyled">
+                <li class="list-item">
+                  <div class="paragraph-light">Dimensions</div>
+                  <div class="product-detail-measurement">
+                    <div></div>
+                    <div class="product-detail-unit-text cc-middle-text">in x</div>
+                    <div></div>
+                    <div class="product-detail-unit-text cc-middle-text">in x</div>
+                    <div></div>
+                    <div class="product-detail-unit-text">in</div>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="paragraph-light">Weight</div>
+                  <div class="product-detail-measurement">
+                    <div></div>
+                    <div class="product-detail-unit-text">oz</div>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </li>
-        </ul>
-      </div>
-      <div class="divider"></div>
-      <div class="add-to-cart">
-        <form data-node-type="commerce-add-to-cart-form" class="w-commerce-commerceaddtocartform"><label for="quantity-3f8ec8b146ca9ed4b1d9cb3082673eb" class="label">Quantity</label>
-          <div class="product-detail-cta-wrap"><input type="number" id="quantity-3f8ec8b146ca9ed4b1d9cb3082673eb9" name="commerce-add-to-cart-quantity-input" min="1" class="w-commerce-commerceaddtocartquantityinput text-field cc-quantity-field" value="1"><input type="submit" value="Coming Soon" class="w-commerce-commerceaddtocartbutton button"></div>
-        </form>
-        <div style="display:none" class="w-commerce-commerceaddtocartoutofstock status-message">
-          <div>This product is out of stock.</div>
+            <div class="divider"></div>
+            <div class="add-to-cart">
+              <form data-node-type="commerce-add-to-cart-form" class="w-commerce-commerceaddtocartform"><label for="quantity-3f8ec8b146ca9ed4b1d9cb3082673eb" class="label">Quantity</label>
+                <div class="product-detail-cta-wrap"><input type="number" id="quantity-3f8ec8b146ca9ed4b1d9cb3082673eb9" name="commerce-add-to-cart-quantity-input" min="1" class="w-commerce-commerceaddtocartquantityinput text-field cc-quantity-field" value="1"><input type="submit" value="Add to Cart" class="w-commerce-commerceaddtocartbutton button"></div>
+              </form>
+              <div style="display:none" class="w-commerce-commerceaddtocartoutofstock status-message">
+                <div>This product is out of stock.</div>
+              </div>
+              <div data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror">
+                <div class="w-add-to-cart-error-msg" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart.">Product is not available in this quantity.</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div data-node-type="commerce-add-to-cart-error" style="display:none" class="w-commerce-commerceaddtocarterror">
-          <div class="w-add-to-cart-error-msg" data-w-add-to-cart-quantity-error="Product is not available in this quantity." data-w-add-to-cart-general-error="Something went wrong when adding this item to the cart.">Product is not available in this quantity.</div>
-        </div>
-      </div>
+      </div>{%- endfor -%}
     </div>
+    
   </div>
   <div class="section cc-subscribe-form">
     <div class="container cc-subscription-form">

@@ -3,7 +3,7 @@
       
       module.exports = function(eleventyConfig) {
 
-        const references = JSON.parse('{}');
+        const references = JSON.parse('{"products**product":{"field":"product","limit":6}}');
 
         filters(eleventyConfig, references);
 

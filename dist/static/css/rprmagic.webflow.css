@@ -3679,12 +3679,19 @@ figcaption {
 }
 
 .product-detail-cta-wrap {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product-informations {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.product-informations.hidden {
+  display: none;
 }
 
 .list-item {
@@ -3853,6 +3860,14 @@ figcaption {
 }
 
 .option-list {
+  display: block;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
   font-size: 14px;
   line-height: 26px;
 }

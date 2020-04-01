@@ -209,6 +209,12 @@
           "required": false
         },
         {
+          "name": "description",
+          "label": "Description",
+          "widget": "text",
+          "required": false
+        },
+        {
           "label": "Body",
           "name": "body",
           "widget": "markdown",
