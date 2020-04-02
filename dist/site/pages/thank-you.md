@@ -1,8 +1,8 @@
 ---
-title: "Auth/thank-you"
-permalink: "auth/{{ page.fileSlug }}/index.html"
-layout: "auth/thank-you.html"
-slug: "auth/thank-you"
+title: "Thank-you"
+permalink: "{{ page.fileSlug }}/index.html"
+layout: "thank-you.html"
+slug: "thank-you"
 seo:
   title: "Thank You"
   og_title: "Thank You"

@@ -34,10 +34,10 @@
 
 
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation w-nav">
-    <div class="navigation-items"><a href="/our-products/" id="shopLink" class="logo-link js-shoplink w-nav-brand"><img src="/static/images/store-logo2x.png" width="65" alt="" class="logo-image"></a>
+    <div class="navigation-items"><a href="/old-home/" class="logo-link w-nav-brand"><img src="/static/images/store-logo2x.png" width="65" alt="" class="logo-image"></a>
       <div class="navigation-wrap">
-        <nav role="navigation" class="navigation-items w-nav-menu"><a href="/auth/register/" id="signupLink" data-anonymous="inline-block" class="navigation-item nav-link anon-inline-block w-nav-link">Register</a><a href="/auth/login/" id="loginLink" data-anonymous="inline-block" class="navigation-item nav-link anon-inline-block js-login w-nav-link">Login</a><a href="/" class="navigation-item nav-link auth-inline-block js-logout w-nav-link">home</a><a href="#" id="logoutLink" class="navigation-item nav-link auth-inline-block js-logout w-nav-link">log out</a></nav>
-        <div data-node-type="commerce-cart-wrapper" id="cartLink" data-open-product="" data-wf-cart-type="rightSidebar" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart">
+        <nav role="navigation" class="navigation-items w-nav-menu"><a href="/" class="navigation-item w-nav-link">home</a></nav>
+        <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="rightSidebar" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart">
           <a href="#" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink button cc-cart w-inline-block">
             <div class="w-inline-block">Cart</div>
             <div class="w-commerce-commercecartopenlinkcount cart-quantity">0</div>
@@ -159,14 +159,14 @@
   <script>
   // the project's firebase web-app configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyBCtH_bErXEeh25xARdK1CcIlEz2xuedos",
-    authDomain: "rpr-magic-innovations.firebaseapp.com",
-    databaseURL: "https://rpr-magic-innovations.firebaseio.com",
-    projectId: "rpr-magic-innovations",
-    storageBucket: "rpr-magic-innovations.appspot.com",
-    messagingSenderId: "483721450045",
-    appId: "1:483721450045:web:12964141efa13ac52d9054",
-    measurementId: "G-BMB95K4X2R"
+    apiKey: "AIzaSyCZ5NjPcFoJSPwEf0vSCCOt_6r9mgjUQsU",
+    authDomain: "mineralizeme-92729.firebaseapp.com",
+    databaseURL: "https://mineralizeme-92729.firebaseio.com",
+    projectId: "mineralizeme-92729",
+    storageBucket: "mineralizeme-92729.appspot.com",
+    messagingSenderId: "968810345794",
+    appId: "1:968810345794:web:3f818289c4e3b6f03484db",
+    measurementId: "G-SLQWQ106P3"
   };
 </script>
   <!--  [todo] stripe core sdk  -->
@@ -180,21 +180,6 @@
 * 
  -->
   <script src="https://cdn.jsdelivr.net/gh/flowfi/flowfijs@master/webflow/js-sdk/0.0.1/flowfi-app.js" async="" defer=""></script>
-  <script>
-  var privatePages = [
-  '/auth/register-success',
-  '/cart',
-  '/checkout',
-  '/our-products'
-  // '/angies-story'
-];
-</script>
-  <script>
-  var FlowFi = {
-  register_redirect_url: '/auth/register-success',
-  login_redirect_url: '/our-products'
-};
-</script>
   <style>
   .auth-inline-block {
     display: none;

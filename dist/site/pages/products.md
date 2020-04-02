@@ -1,8 +1,8 @@
 ---
-title: "Our-products"
+title: "Products"
 permalink: "{{ page.fileSlug }}/index.html"
-layout: "our-products.html"
-slug: "our-products"
+layout: "products.html"
+slug: "products"
 seo:
   title: "Products"
   og_title: "Products"
