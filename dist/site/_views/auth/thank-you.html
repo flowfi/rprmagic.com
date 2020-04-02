@@ -1,5 +1,6 @@
-<!doctype html><html data-wf-page="5e6c306339a73b3444b5c53f" data-wf-site="5e6c3062a2ae9741bf21a2a4"><head><style>html{visibility: hidden;opacity:0;}</style>{%- seo seo -%}
+<!doctype html><html data-wf-page="5e6c3ae61489075ffcc19e3a" data-wf-site="5e6c3062a2ae9741bf21a2a4"><head><style>html{visibility: hidden;opacity:0;}</style>{%- seo seo -%}
   <meta charset="utf-8">
+  
   
   
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -33,35 +34,15 @@
   <!--  End Facebook Pixel Code  -->
 
 
-  <div class="section">
-    <div class="container cc-heading-wrap">
-      <h1>Our Products</h1>
-      <div class="store-categories-wrap"><a href="/products/" aria-current="page" class="products-category-link w--current">All Products</a>
-        <div class="w-dyn-list">
-          <div class="collection-list w-dyn-items">
-            <div class="w-dyn-item"><a href="#" class="products-category-link"></a></div>
-          </div>
-          <div class="status-message w-dyn-empty">
-            <div>No items found.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="w-dyn-list">
-      <div class="collection-wrap w-dyn-items">
-        <div class="collection-item w-dyn-item">
-          <a image="Main Image" href="#" class="product-image-wrap w-inline-block">
-            <div class="product-description">
-              <div text="Name" class="product-name-text"></div>
-              <div text="Price" class="product-price-text"></div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="status-message cc-no-data w-dyn-empty">
-        <div>No items found.</div>
+  <div class="section cc-store-home-wrap">
+    <div class="intro-header">
+      <div class="intro-content">
+        <div class="intro-text">
+          <div class="heading-jumbo">RPR&nbsp;Magic Innovations<br></div>
+          <div class="paragraph-bigger">Rocco Silano<br></div>
+          <div class="paragraph-bigger">Perry Maynard<br></div>
+          <div class="paragraph-bigger">Roy Kueppers<br></div>
+          <h2>Thank You.</h2><a href="/our-products/" class="button w-button">click here to view products</a></div>
       </div>
     </div>
   </div>
@@ -94,14 +75,14 @@
   <script>
   // the project's firebase web-app configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyCZ5NjPcFoJSPwEf0vSCCOt_6r9mgjUQsU",
-    authDomain: "mineralizeme-92729.firebaseapp.com",
-    databaseURL: "https://mineralizeme-92729.firebaseio.com",
-    projectId: "mineralizeme-92729",
-    storageBucket: "mineralizeme-92729.appspot.com",
-    messagingSenderId: "968810345794",
-    appId: "1:968810345794:web:3f818289c4e3b6f03484db",
-    measurementId: "G-SLQWQ106P3"
+    apiKey: "AIzaSyBCtH_bErXEeh25xARdK1CcIlEz2xuedos",
+    authDomain: "rpr-magic-innovations.firebaseapp.com",
+    databaseURL: "https://rpr-magic-innovations.firebaseio.com",
+    projectId: "rpr-magic-innovations",
+    storageBucket: "rpr-magic-innovations.appspot.com",
+    messagingSenderId: "483721450045",
+    appId: "1:483721450045:web:12964141efa13ac52d9054",
+    measurementId: "G-BMB95K4X2R"
   };
 </script>
   <!--  [todo] stripe core sdk  -->
@@ -115,6 +96,21 @@
 * 
  -->
   <script src="https://cdn.jsdelivr.net/gh/flowfi/flowfijs@master/webflow/js-sdk/0.0.1/flowfi-app.js" async="" defer=""></script>
+  <script>
+  var privatePages = [
+  '/auth/register-success',
+  '/cart',
+  '/checkout',
+  '/our-products'
+  // '/angies-story'
+];
+</script>
+  <script>
+  var FlowFi = {
+  register_redirect_url: '/auth/register-success',
+  login_redirect_url: '/our-products'
+};
+</script>
   <style>
   .auth-inline-block {
     display: none;

@@ -34,10 +34,10 @@
 
 
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation w-nav">
-    <div class="navigation-items"><a href="/old-home/" class="logo-link w-nav-brand"><img src="/static/images/store-logo2x.png" width="65" alt="" class="logo-image"></a>
+    <div class="navigation-items"><a href="/our-products/" id="shopLink" class="logo-link js-shoplink w-nav-brand"><img src="/static/images/store-logo2x.png" width="65" alt="" class="logo-image"></a>
       <div class="navigation-wrap">
-        <nav role="navigation" class="navigation-items w-nav-menu"><a href="/" class="navigation-item w-nav-link">home</a></nav>
-        <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="rightSidebar" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart">
+        <nav role="navigation" class="navigation-items w-nav-menu"><a href="/auth/register/" id="signupLink" data-anonymous="inline-block" class="navigation-item nav-link anon-inline-block w-nav-link">Register</a><a href="/auth/login/" id="loginLink" data-anonymous="inline-block" class="navigation-item nav-link anon-inline-block js-login w-nav-link">Login</a><a href="/" class="navigation-item nav-link auth-inline-block js-logout w-nav-link">home</a><a href="#" id="logoutLink" class="navigation-item nav-link auth-inline-block js-logout w-nav-link">log out</a></nav>
+        <div data-node-type="commerce-cart-wrapper" id="cartLink" data-open-product="" data-wf-cart-type="rightSidebar" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart">
           <a href="#" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink button cc-cart w-inline-block">
             <div class="w-inline-block">Cart</div>
             <div class="w-commerce-commercecartopenlinkcount cart-quantity">0</div>
@@ -130,11 +130,11 @@
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class="section footer-section">
     <div class="container">
       <div class="w-layout-grid footer"><a href="/old-home/" id="w-node-2d9f87e2971b-87e29718" class="logo-link w-inline-block"><img src="/static/images/store-logo2x_1.png" width="65" alt="" class="logo-footer"></a>
         <div id="w-node-2d9f87e2971d-87e29718" class="label">Menu</div>
-        <div id="w-node-2d9f87e2971f-87e29718" class="links-section-footer"><a href="/old-home/" class="footer-link">Home</a><a href="/about/" aria-current="page" class="footer-link w--current">About</a><a href="/contact/" class="footer-link">Contact</a><a href="/products/" class="footer-link">Products</a><a href="/blog/" class="footer-link">Blog</a><a href="/styleguide/" class="footer-link">Styleguide</a></div>
+        <div id="w-node-2d9f87e2971f-87e29718" class="links-section-footer"><a href="/old-home/" class="footer-link">Home</a><a href="/about/" aria-current="page" class="footer-link w--current">About</a><a href="/contact/" class="footer-link">Contact</a><a href="/our-products/" class="footer-link">Products</a><a href="/blog/" class="footer-link">Blog</a><a href="/styleguide/" class="footer-link">Styleguide</a></div>
         <div id="w-node-2d9f87e29724-87e29718" class="label">Categories</div>
         <div id="w-node-2d9f87e29726-87e29718" class="links-section-footer">
           <div class="w-dyn-list">
@@ -149,7 +149,7 @@
         <div id="w-node-2d9f87e2972d-87e29718" class="label">Help</div>
         <div id="w-node-2d9f87e2972f-87e29718" class="links-section-footer"><a href="/contact/" class="footer-link">Shipping</a><a href="/contact/" class="footer-link">Returns &amp; Exchange</a><a href="/contact/" class="footer-link">Product Care</a></div>
         <div id="w-node-2d9f87e29736-87e29718" class="label">Follow</div>
-        <div id="w-node-2d9f87e29738-87e29718" class="links-section-footer"><a href="https://www.instagram.com/webflowapp/" target="_blank" class="footer-link">Instagram</a><a href="https://www.facebook.com/webflow/" target="_blank" class="footer-link">Facebook</a><a href="https://twitter.com/webflow" target="_blank" class="footer-link">Twitter</a></div><a id="w-node-2d9f87e2973f-87e29718" href="https://webflow.com/" target="_blank" class="made-with-webflow w-inline-block"><img src="/static/images/webflow-w-small2x_1webflow-w-small2x.png" width="15" alt="" class="webflow-logo-tiny"><div class="paragraph-tiny">Powered by Webflow</div></a></div>
+        <div id="w-node-2d9f87e29738-87e29718" class="links-section-footer"><a href="https://www.instagram.com/webflowapp/" target="_blank" class="footer-link">Instagram</a><a href="https://www.facebook.com/webflow/" target="_blank" class="footer-link">Facebook</a><a href="https://twitter.com/webflow" target="_blank" class="footer-link">Twitter</a></div><a id="w-node-2d9f87e2973f-87e29718" href="https://webflow.com/" target="_blank" class="made-with-webflow w-inline-block"><img src="/static/images/webflow-w-small2x_1webflow-w-small2x.png" width="15" alt="" class="webflow-logo-tiny"><div class="paragraph-tiny">Powered by Arthur Chaos</div></a></div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" crossorigin="anonymous"></script>
@@ -165,14 +165,14 @@
   <script>
   // the project's firebase web-app configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyCZ5NjPcFoJSPwEf0vSCCOt_6r9mgjUQsU",
-    authDomain: "mineralizeme-92729.firebaseapp.com",
-    databaseURL: "https://mineralizeme-92729.firebaseio.com",
-    projectId: "mineralizeme-92729",
-    storageBucket: "mineralizeme-92729.appspot.com",
-    messagingSenderId: "968810345794",
-    appId: "1:968810345794:web:3f818289c4e3b6f03484db",
-    measurementId: "G-SLQWQ106P3"
+    apiKey: "AIzaSyBCtH_bErXEeh25xARdK1CcIlEz2xuedos",
+    authDomain: "rpr-magic-innovations.firebaseapp.com",
+    databaseURL: "https://rpr-magic-innovations.firebaseio.com",
+    projectId: "rpr-magic-innovations",
+    storageBucket: "rpr-magic-innovations.appspot.com",
+    messagingSenderId: "483721450045",
+    appId: "1:483721450045:web:12964141efa13ac52d9054",
+    measurementId: "G-BMB95K4X2R"
   };
 </script>
   <!--  [todo] stripe core sdk  -->
@@ -186,6 +186,21 @@
 * 
  -->
   <script src="https://cdn.jsdelivr.net/gh/flowfi/flowfijs@master/webflow/js-sdk/0.0.1/flowfi-app.js" async="" defer=""></script>
+  <script>
+  var privatePages = [
+  '/auth/register-success',
+  '/cart',
+  '/checkout',
+  '/our-products'
+  // '/angies-story'
+];
+</script>
+  <script>
+  var FlowFi = {
+  register_redirect_url: '/auth/register-success',
+  login_redirect_url: '/our-products'
+};
+</script>
   <style>
   .auth-inline-block {
     display: none;
